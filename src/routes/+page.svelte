@@ -1,6 +1,7 @@
 <script>
     import '../style/style.css';
     import white_circle from '$lib/assets/White_Circle.svg';
+    import star from '$lib/assets/star.svg';
 </script>
 
 <div class="top-bar">
@@ -11,10 +12,10 @@
     <div class="user">
         <img src={white_circle} alt="profile">
         <p class="hello-user">Hi, Bailey!</p>
-        <div class="drop-down">&#9660;</div>
+        <div class="drop-down">&gt;</div>
     </div>
 </div>
-<div class="body">
+<div class="dash">
     <div class="column-1">
         <div class="recent-purchases">
             <h2 class="title">Recent Purchases</h2>
@@ -29,8 +30,8 @@
                         <h4 class="spent">$27.83</h4>
                     <button>Round Up to Savings</button>
                     </div>
-                    <hr class="solid">
                 </div>
+                <hr class="solid">
                 <div class="purchase">
                     <div class="bullet">&gt;</div>
                     <div class="left-purchase">
@@ -41,9 +42,9 @@
                         <h4 class="spent">$27.83</h4>
                     <button>Round Up to Savings</button>
                     </div>
-                    <hr class="solid">
                 </div>
-                <div class="purchase">
+                <hr class="solid">
+                <div class="purchase" style="margin-bottom: 30px">
                     <div class="bullet">&gt;</div>
                     <div class="left-purchase">
                         <h3 class="date-and-location">11/09 - Amazon.com</h3>
@@ -64,7 +65,9 @@
                         <h3 class="goal-name">Round Up Savings 3 Times</h3>
                         <div class="goal-reward">
                             <p class="star-amount">3</p>
-                            <img src="" alt="star">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
+                                <path d="m56,237 74-228 74,228L10,96h240"/>
+                                </svg>
                         </div>
                     </div>
                     <button>Complete</button>
@@ -75,12 +78,14 @@
                         <h3 class="goal-name">Round Up Savings 3 Times</h3>
                         <div class="goal-reward">
                             <p class="star-amount">3</p>
-                            <img src="" alt="star">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
+                                <path d="m56,237 74-228 74,228L10,96h240"/>
+                                </svg>
                         </div>
                     </div>
                     <button>Complete</button>
                 </div>
-                <button>Add New Goal</button>
+                <button class="new-goal">Add New Goal</button>
             </div>
         </div>
     </div>
@@ -95,7 +100,9 @@
             <h2 class="title">Current Stars</h2>
             <div class="current-stars-container">
                 <p class="current-star-number">3</p>
-                <img src="" alt="star">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
+                    <path d="m56,237 74-228 74,228L10,96h240"/>
+                    </svg>
             </div>
         </div>
         <div class="available-games">
@@ -105,10 +112,12 @@
                     <div class="game-top">
                         <div class="game-top-left">
                             <p class="star-amount">2</p>
-                            <img src="" alt="star">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
+                                <path d="m56,237 74-228 74,228L10,96h240"/>
+                                </svg>
                         </div>
                         <div class="game-top right">
-                            <button>&#9660;</button>
+                            <button>&gt;</button>
                         </div>
                     </div>
                     <div class="game-bottom">
@@ -120,10 +129,12 @@
                     <div class="game-top">
                         <div class="game-top-left">
                             <p class="star-amount">1</p>
-                            <img src="" alt="star">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
+                                <path d="m56,237 74-228 74,228L10,96h240"/>
+                                </svg>
                         </div>
                         <div class="game-top right">
-                            <button>&#9660;</button>
+                            <button>&gt;</button>
                         </div>
                     </div>
                     <div class="game-bottom">
@@ -131,19 +142,22 @@
                     </div>
                 </div>
                 <hr class="solid">
-            <p class="disclaimer">More games coming soon!</p>
+            <p id="disclaimer">More games coming soon!</p>
             </div>
         </div>
     </div>
     <div class="column-3">
         <div class="rewards">
+            <h2 class="title">Rewards</h2>
             <div class="reward-list">
                 <div class="reward">
                     <h3 class="reward-top">Two Hours of Any Video Game Time</h3>
                     <div class="reward-bottom">
                         <div class="reward-bottom-left">
                             <p class="star-amount">1</p>
-                            <img src="" alt="star">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
+                                <path d="m56,237 74-228 74,228L10,96h240"/>
+                                </svg>
                         </div>
                         <button>Redeem</button>
                     </div>
@@ -154,7 +168,9 @@
                     <div class="reward-bottom">
                         <div class="reward-bottom-left">
                             <p class="star-amount">1</p>
-                            <img src="" alt="star">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
+                                <path d="m56,237 74-228 74,228L10,96h240"/>
+                                </svg>
                         </div>
                         <button>Redeem</button>
                     </div>
@@ -165,7 +181,9 @@
                     <div class="reward-bottom">
                         <div class="reward-bottom-left">
                             <p class="star-amount">1</p>
-                            <img src="" alt="star">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
+                                <path d="m56,237 74-228 74,228L10,96h240"/>
+                                </svg>
                         </div>
                         <button>Redeem</button>
                     </div>
@@ -176,13 +194,15 @@
                     <div class="reward-bottom">
                         <div class="reward-bottom-left">
                             <p class="star-amount">1</p>
-                            <img src="" alt="star">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
+                                <path d="m56,237 74-228 74,228L10,96h240"/>
+                                </svg>
                         </div>
                         <button>Redeem</button>
                     </div>
                 </div>
                 <hr class="solid">
-                <button>Add New Reward</button>
+                <button class="new-reward">Add New Reward</button>
             </div>
         </div>
     </div>

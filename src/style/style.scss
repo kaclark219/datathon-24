@@ -25,6 +25,12 @@
         position: absolute;
         right: 30px;
         top: 15px;
+        .drop-down {
+            margin-top: 10px;
+            rotate: 90deg;
+            font-family: "Press Start 2P";
+            font-size: 36px;
+        }
     }
     img {
         border-radius: 100%;
@@ -32,7 +38,225 @@
         width: 65px;
     }
 }
-
 body {
-    background-color: gray;
+    background-color: #DEDFEC;
+}
+svg {
+    fill: #D20000;
+    width: 50px;
+    height: 50px;
+}
+.dash {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 6fr 3fr 4fr;
+    gap: 30px;
+    h2 {
+        color: #006D1F;
+        font-family: "Press Start 2P";
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+}
+
+// consistent styling
+.column-1, .column-2, .column-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.title {
+    text-align: center;
+}
+.purchase-list, .goal-list, .savings-number, .current-stars-container, .game-list, .reward-list {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+}
+hr {
+    border-top: 1px solid #006D1F;
+    width: 100%;
+    margin: 10px 0px;
+}
+button {
+    background-color: #0320B4;
+    color: white;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: 600;
+    padding: 10px 30px;
+    border-radius: 10px;
+    &:hover, &:focus {
+        background-color: #001685;
+    }
+}
+h3 {
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.purchase {
+    display: flex;
+    margin-bottom:50px;
+    .bullet {
+        margin-top: 15px;
+        color: #006D1F;
+        font-family: "Press Start 2P";
+        font-size: 36px;
+        margin-right: 10px;
+    }
+    p {
+        font-family: "Open Sans";
+        font-size: 20px;
+        font-weight: 600;
+        color: #D20000;
+    }
+    h4 {
+        font-family: "Open Sans";
+        font-size: 32px;
+        font-weight: 700;
+    }
+    .right-purchase {
+        position: absolute;
+        right: 30px;
+        justify-items: right;
+    }
+}
+
+.goal-list {
+    display: flex;
+    flex-direction: column;
+    .goal-reward {
+        display: flex;
+        flex-direction: row;
+        align-content: middle;
+    }
+    p {
+        margin-top: 10px;
+        font-family: "Press Start 2P";
+        font-size: 36px;
+        color: #D20000;
+    }
+    .new-goal {
+        margin-top: 20px;
+        width: 275px;
+        align-self: center;
+    }
+    .goal {
+        button {
+            position: absolute;
+            right: 30px;
+            margin-top: -60px;
+        }
+    }
+}
+.savings-number {
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 64px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.current-stars {
+    .title {
+        margin-top: 10px;
+    }
+}
+.current-stars-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    p {
+        font-family: "Press Start 2P";
+        font-size: 64px;
+    }
+    svg {
+        height: 90px;
+        width: 90px;
+        margin-top: -10px;
+    }
+}
+.available-games {
+    .title {
+        margin-top: 10px;
+    }
+}
+.game-list {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    .game-top {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        width: 100%;
+    }
+    .game-top-left {
+        display: flex;
+        flex-direction: row;
+        p {
+            margin-top: 10px;
+            font-family: "Press Start 2P";
+            font-size: 36px;
+            color: #D20000;
+        }
+    }
+    button {
+        color: white;
+        font-family: "Press Start 2P";
+        font-size: 32px;
+        position: absolute;
+        right: 0px;
+    }
+    .game-bottom {
+        font-family: "Open Sans";
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+#disclaimer {
+    color: #006D1F;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 600;
+}
+.reward-list {
+    display: flex;
+    flex-direction: column;
+    height: 760px;
+    position: relative;
+    .reward {
+        position: relative;
+        .reward-top {
+            width: 60%;
+        }
+        .reward-bottom-left {
+            display: flex;
+            p {
+                margin-top: 10px;
+                font-family: "Press Start 2P";
+                font-size: 36px;
+                color: #D20000;
+            }
+        }
+        button {
+            position: absolute;
+            right: 0px;
+            margin-top: -60px;
+        }
+    }
+    .new-reward {
+        position: absolute;
+        align-self: center;
+        bottom: 30px;
+        width: 275px;
+    }
 }
