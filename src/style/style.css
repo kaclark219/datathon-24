@@ -189,6 +189,10 @@ svg {
   align-items: stretch;
 }
 
+.column-2 .title {
+  width: 310px;
+}
+
 .title {
   text-align: center;
 }
@@ -254,6 +258,7 @@ h3 {
   position: absolute;
   right: 30px;
   justify-items: right;
+  margin-top: 20px;
 }
 
 .goal-list {
@@ -360,7 +365,7 @@ h3 {
 .reward-list {
   display: flex;
   flex-direction: column;
-  height: 760px;
+  height: 820px;
   position: relative;
 }
 .reward-list .reward {
