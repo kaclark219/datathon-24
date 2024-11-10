@@ -51,7 +51,7 @@
                     </div>
                     <div class="right-purchase">
                         <h4 class="spent">$27.83</h4>
-                    <button on:click={roundUpToSavings(0.17,0)}>Round Up to Savings</button>
+                    <button on:click={() => roundUpToSavings(0.17,0)}>Round Up to Savings</button>
                     </div>
                 </div>
                 <hr class="solid">
@@ -63,7 +63,7 @@
                     </div>
                     <div class="right-purchase">
                         <h4 class="spent">$16.18</h4>
-                    <button on:click={roundUpToSavings(0.82,1)}>Round Up to Savings</button>
+                    <button on:click={() => roundUpToSavings(0.82,1)}>Round Up to Savings</button>
                     </div>
                 </div>
                 <hr class="solid">
@@ -75,7 +75,7 @@
                     </div>
                     <div class="right-purchase">
                         <h4 class="spent">$9.52</h4>
-                    <button on:click={roundUpToSavings(0.48,2)}>Round Up to Savings</button>
+                    <button on:click={() => roundUpToSavings(0.48,2)}>Round Up to Savings</button>
                     </div>
                 </div>
             </div>
@@ -93,7 +93,7 @@
                                 </svg>
                         </div>
                     </div>
-                    <button on:click={goalCompleted(1,0)}>Complete</button>
+                    <button on:click={() => goalCompleted(1,0)}>Complete</button>
                 </div>
                 <hr class="solid">
                 <div class="goal">
@@ -106,7 +106,7 @@
                                 </svg>
                         </div>
                     </div>
-                    <button on:click={goalCompleted(3,1)}>Complete</button>
+                    <button on:click={() => goalCompleted(3,1)}>Complete</button>
                 </div>
                 <button class="new-goal">Add New Goal</button>
             </div>
@@ -140,7 +140,7 @@
                                 </svg>
                         </div>
                         <div class="game-top right">
-                            <a href="./vocab_game"target="_blank"><button on:click={incrementStarCount(3)}>&gt;</button></a>
+                            <a href="./vocab_game"target="_blank"><button on:click={() => incrementStarCount(3)}>&gt;</button></a>
                         </div>
                     </div>
                     <div class="game-bottom">
@@ -157,7 +157,7 @@
                                 </svg>
                         </div>
                         <div class="game-top right">
-                            <a href="./matching_game" target="_blank"><button on:click={incrementStarCount(1)}>&gt;</button></a>
+                            <a href="./matching_game" target="_blank"><button on:click={() => incrementStarCount(1)}>&gt;</button></a>
                         </div>
                     </div>
                     <div class="game-bottom">
@@ -182,7 +182,7 @@
                                 <path d="m56,237 74-228 74,228L10,96h240"/>
                                 </svg>
                         </div>
-                        <button on:click={decrementStarCount(3,0)}>Redeem</button>
+                        <button on:click={() => decrementStarCount(3,0)}>Redeem</button>
                     </div>
                 </div>
                 <hr class="solid">
@@ -195,7 +195,7 @@
                                 <path d="m56,237 74-228 74,228L10,96h240"/>
                                 </svg>
                         </div>
-                        <button on:click={decrementStarCount(5,1)}>Redeem</button>
+                        <button on:click={() => decrementStarCount(5,1)}>Redeem</button>
                     </div>
                 </div>
                 <hr class="solid">
@@ -208,7 +208,7 @@
                                 <path d="m56,237 74-228 74,228L10,96h240"/>
                                 </svg>
                         </div>
-                        <button on:click={decrementStarCount(2,2)}>Redeem</button>
+                        <button on:click={() => decrementStarCount(2,2)}>Redeem</button>
                     </div>
                 </div>
                 <hr class="solid">
@@ -221,7 +221,7 @@
                                 <path d="m56,237 74-228 74,228L10,96h240"/>
                                 </svg>
                         </div>
-                        <button on:click={decrementStarCount(8,3)}>Redeem</button>
+                        <button on:click={() => decrementStarCount(8,3)}>Redeem</button>
                     </div>
                 </div>
                 <hr class="solid">
