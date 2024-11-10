@@ -1,14 +1,15 @@
 <script>
-
+    import '../style/style.css';
+    import white_circle from '$lib/assets/White_Circle.svg';
 </script>
 
 <div class="top-bar">
     <div class="website-name">
-        <div class="logo"><img src="" alt=""></div>
+        <img src={white_circle} alt="circle logo">
         <h1 class="app-name">Make It Make Cents</h1>
     </div>
     <div class="user">
-        <div class="profile-img"><img src="" alt=""></div>
+        <img src={white_circle} alt="profile">
         <p class="hello-user">Hi, Bailey!</p>
         <div class="drop-down">&#9660;</div>
     </div>
