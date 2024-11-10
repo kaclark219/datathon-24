@@ -59,7 +59,7 @@
                     <div class="bullet">&gt;</div>
                     <div class="left-purchase">
                         <h3 class="date-and-location">11/07 - GameStop</h3>
-                        <p class="nearest-dollar" class:crossed={roundedUp[1]}>$0.81 to Nearest Dollar</p>
+                        <p class="nearest-dollar" class:crossed={roundedUp[1]}>$0.82 to Nearest Dollar</p>
                     </div>
                     <div class="right-purchase">
                         <h4 class="spent">$16.18</h4>
